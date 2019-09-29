@@ -1,0 +1,31 @@
+<html lang="en">
+	<head>
+		<title>Set Time Calculator</title>
+		<link rel="stylesheet" href="style.css">
+        <meta charset="utf-8" />        
+        <meta name="description" content="Set Time Calculator helps you work out set lengths at shows.">
+	</head>
+	<body>
+        <main>
+            <h1>Set Time Calculator</h1>
+
+            <form name="SetCalculator">
+                <label for="ConcertDuration">Concert Duration:</label><input type="text" name="ConcertDuration" value="240" size="4">
+                <label for="NumberOfSets">Number of Sets:</label><input type="text" name="NumberOfSets" value="4" size="4">
+                <label for="SetLength">Set Length:</label><input type="text" name="SetLength" value="45" size="4">
+                <label for="startTime">Start Hour:</label><input type="text" name="startTime" value="9" size="4">
+                <label for="CalculateButton">Calculate:</label><input type="button" value="Go!" name="CalculateButton" onClick="reloadPageWithArgs();">
+            </form>
+            
+            <div id="summary"></div>
+
+            <div id="graph"></div>
+        </main>
+        
+        <footer>
+            <p>"Set Time Calculator" was created by <a href="http://MarcusGuitar.com">Marcus Wynwood</a>.</p>
+        </footer>
+        
+		<script src="settimes.js"></script>
+	</body>
+</html>
